@@ -108,7 +108,6 @@ post '/contacts' do
 end	
 
 def send_mess adr
-
 Pony.mail(
   :from => 'admin@site.com.ua',
   :body => "from #{adr[0]}:\n"+adr[1],
